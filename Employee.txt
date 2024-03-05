@@ -1,0 +1,46 @@
+package week02;
+
+class Employee
+{
+	String empName;
+	int empNo;
+	float Salary;
+	String Desig;
+	byte expYrs;
+	
+	void setEmployee(String Name,int no,float sal,String des,byte ex)
+	{
+		String empName;
+		int empNo=no;
+		float Salary=sal;
+		String Desig=des;
+		byte expYrs=ex;
+		
+	}
+	void getEmployee()
+	{
+		System.out.println(empName+"\t\t"+empNo+"\t\t"+Salary+"\t\t"+Desig+"\t\t"+expYrs+"\n");
+	}
+}
+class demoEmployee01
+{
+	public static void main(String args[])
+	{
+		Employee Sanjana=new Employee();
+		Sanjana.setEmployee("Sanjana",119,500000,"PM",(byte)20);
+		System.out.println("empName\tempNo\tempSalary\tempDesig\texpYrs\n");
+		Sanjana.getEmployee();
+		
+		Employee Veena = new Employee();
+		Veena.empName="Veena Shree";
+		Veena.empNo=1192;
+		Veena.Salary=1000000;
+		Veena.Desig="Project Lead";
+		Veena.expYrs=(byte)20;
+		Veena.getEmployee()
+		
+		
+		
+		
+	}
+}
